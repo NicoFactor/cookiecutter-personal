@@ -9,7 +9,8 @@ RESET_ALL = "\x1b[0m"
 print(f"{MESSAGE_COLOR}Almost done!")
 print(f"Initializing a git repository...{RESET_ALL}")
 
-subprocess.call(['git', 'init'])
+subprocess.call(['git' 'init'])
+subprocess.call(['git', 'branch', '-M', 'main'])
 subprocess.call(['git', 'add', '*'])
 subprocess.call(['git', 'commit', '-m', 'Initial commit'])
 
